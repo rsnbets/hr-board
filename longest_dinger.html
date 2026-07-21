@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Longest Dinger Bot — Profit Path Sports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0B0B0D;--panel:#141317;--border:rgba(255,255,255,0.08);--border-2:rgba(255,255,255,0.05);
+    --text:#F0EEE8;--muted:rgba(255,255,255,0.42);--dim:rgba(255,255,255,0.25);
+    --green:#4ADE80;--green-dim:rgba(74,222,128,0.12);--green-faint:rgba(74,222,128,0.05);
+    --cyan:#00D4FF;--red:#F87171;--yellow:#F5B545}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font:400 14px 'Plus Jakarta Sans',sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px 60px}
+  .back-bar{font-size:13px;color:var(--muted);padding:18px 2px 0}
+  .back-bar a{color:var(--muted);text-decoration:none}
+  .back-bar a:hover{color:var(--text)}
+  .back-bar .sep{margin:0 8px;color:var(--dim)}
+  .hero{background:var(--panel);border:1px solid var(--border);border-radius:18px;
+        padding:28px 24px 24px;margin:14px 0 22px;text-align:center;
+        box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+  .wordmark{font-size:clamp(36px,7vw,56px);font-weight:800;line-height:.92;letter-spacing:-0.03em}
+  .wordmark .accent{color:var(--green)}
+  .sports-suffix{display:block;font:400 11px 'Plus Jakarta Sans';letter-spacing:.5em;
+                 text-transform:uppercase;color:var(--dim);margin-bottom:18px}
+  .tagline{font-size:clamp(18px,2.8vw,24px);letter-spacing:4px;text-transform:uppercase;
+           color:var(--yellow);font-weight:800;margin-bottom:14px}
+  .hero-meta{font-size:12px;color:var(--muted);font-family:'DM Mono',monospace}
+  .hero-meta b{color:var(--text);font-weight:500}
+  .promo{background:var(--panel);border:1px solid var(--border);border-radius:12px;
+         padding:16px 18px;margin-bottom:20px;font-size:13px;color:var(--muted);line-height:1.55}
+  .promo b{color:var(--text)} .promo .bar{color:var(--yellow);font-weight:700}
+  .tscroll{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;min-width:760px}
+  th{font:600 10px 'Plus Jakarta Sans';letter-spacing:.4px;text-transform:uppercase;color:var(--dim);
+     text-align:left;padding:8px 10px;border-bottom:1px solid var(--border)}
+  th.num,td.num{text-align:right}
+  td{padding:9px 10px;border-bottom:1px solid var(--border-2);font-family:'DM Mono',monospace;font-size:13px}
+  td.bat{font-family:'Plus Jakarta Sans'}
+  .bn{display:block;font-weight:700} .tm{display:block;font-size:11px;color:var(--muted)}
+  .vn{font-family:'Plus Jakarta Sans';font-size:12px;color:var(--muted)}
+  .rank{color:var(--dim)}
+  .plong{font-weight:700;color:var(--yellow);font-size:14px}
+  .am{display:block;font:600 12px 'DM Mono',monospace;color:var(--muted);margin-top:3px}
+  .lc{font-size:9px;font-weight:700;letter-spacing:.4px;padding:1px 5px;border-radius:4px;margin-left:6px}
+  .lc.conf{background:var(--green-dim);color:var(--green)}
+  .lc.proj{background:rgba(245,181,69,0.15);color:var(--yellow)}
+  .pos{color:var(--green)} .neg{color:var(--red)} .dim{color:var(--dim)}
+  .disclaimer{margin-top:26px;font-size:11px;color:var(--dim);line-height:1.6}
+</style></head><body><div class="wrap">
+<div class="back-bar">
+  <a href="https://www.profitpathsports.com/index.html">← Profit Path Sports</a>
+  <span class="sep">/</span><a href="hr_dashboard.html">Dinger Bot 1000</a>
+  <span class="sep">/</span><span>Longest Dinger</span>
+</div>
+<div class="hero">
+  <div class="wordmark">PROFIT<span class="accent">PATH</span></div>
+  <span class="sports-suffix">Sports</span>
+  <div class="tagline">💣 Longest Dinger Bot</div>
+  <div class="hero-meta">Updated <b>Jul 21, 2026 · 10:03 AM MDT</b> · <b>30</b> candidates ranked
+    &nbsp;·&nbsp; <a href="hr_dashboard.html" style="color:var(--green);text-decoration:none">← Dinger Bot 1000</a></div>
+</div>
+<div class="promo">
+  <b>The play:</b> a promo pays a shared pool if the HR you bet (≥$5, normal odds) is the
+  <b>longest home run of the day</b> — your bet also settles normally, the pool is a free
+  overlay. This board ranks today's hitters by <b>P(hits the day's longest)</b>: the Dinger
+  model's HR probability × a distance shoot-out simulated 20,000× across the whole slate
+  using each hitter's own Statcast HR distances (park, temp &amp; wind adjusted).<br>
+  <b>This season's winning bar:</b> the day's longest HR lands between
+  <span class="bar">438</span> and <span class="bar">455</span> ft on a typical
+  day (median <span class="bar">446</span>). "His p90/max" shows what the hitter has
+  actually launched this year.<br>
+  <b>Pool tip:</b> when two hitters have similar win odds, the LESS-popular name splits the
+  pool with fewer people.
+</div>
+<div class="tscroll"><table><thead><tr>
+  <th class="num">#</th><th>Batter</th><th>Venue</th>
+  <th class="num" title="Dinger model HR probability">HR %</th>
+  <th class="num" title="His HRs this season (distance sample)">HRs</th>
+  <th class="num" title="His p90 / max HR distance this season, feet">p90 / max ft</th>
+  <th class="num" title="Today's park/temp/wind distance bump">Ctx</th>
+  <th class="num" title="Chance he hits the day's longest HR (fair odds below)">P(longest)</th>
+</tr></thead><tbody><tr>
+      <td class="num rank">1</td>
+      <td class="bat"><span class="bn">James Wood <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Washington Nationals</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">29.2%</td>
+      <td class="num">29</td>
+      <td class="num">441 / 446</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">2.92%<span class="am">+3325</span></td>
+    </tr><tr>
+      <td class="num rank">2</td>
+      <td class="bat"><span class="bn">Mickey Moniak <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Colorado Rockies</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">20.6%</td>
+      <td class="num">18</td>
+      <td class="num">437 / 439</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">2.85%<span class="am">+3409</span></td>
+    </tr><tr>
+      <td class="num rank">3</td>
+      <td class="bat"><span class="bn">Willi Castro <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Colorado Rockies</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">16.2%</td>
+      <td class="num">9</td>
+      <td class="num">438 / 444</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">2.84%<span class="am">+3421</span></td>
+    </tr><tr>
+      <td class="num rank">4</td>
+      <td class="bat"><span class="bn">Kyle Karros <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Colorado Rockies</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">13.4%</td>
+      <td class="num">12</td>
+      <td class="num">448 / 457</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">2.72%<span class="am">+3576</span></td>
+    </tr><tr>
+      <td class="num rank">5</td>
+      <td class="bat"><span class="bn">Hunter Goodman <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Colorado Rockies</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">25.0%</td>
+      <td class="num">31</td>
+      <td class="num">435 / 451</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">2.71%<span class="am">+3590</span></td>
+    </tr><tr>
+      <td class="num rank">6</td>
+      <td class="bat"><span class="bn">Max Muncy <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Los Angeles Dodgers</span></td>
+      <td class="vn">Citizens Bank Park</td>
+      <td class="num">37.4%</td>
+      <td class="num">21</td>
+      <td class="num">440 / 454</td>
+      <td class="num"><span class="pos">+5 ft</span></td>
+      <td class="num plong">2.46%<span class="am">+3965</span></td>
+    </tr><tr>
+      <td class="num rank">7</td>
+      <td class="bat"><span class="bn">Dylan Crews <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Washington Nationals</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">15.0%</td>
+      <td class="num">7</td>
+      <td class="num">441 / 442</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">2.01%<span class="am">+4875</span></td>
+    </tr><tr>
+      <td class="num rank">8</td>
+      <td class="bat"><span class="bn">Kyle Schwarber <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span></td>
+      <td class="vn">Citizens Bank Park</td>
+      <td class="num">25.8%</td>
+      <td class="num">35</td>
+      <td class="num">443 / 460</td>
+      <td class="num"><span class="pos">+5 ft</span></td>
+      <td class="num plong">1.88%<span class="am">+5219</span></td>
+    </tr><tr>
+      <td class="num rank">9</td>
+      <td class="bat"><span class="bn">Jake McCarthy <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Colorado Rockies</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">13.4%</td>
+      <td class="num">10</td>
+      <td class="num">441 / 448</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">1.87%<span class="am">+5248</span></td>
+    </tr><tr>
+      <td class="num rank">10</td>
+      <td class="bat"><span class="bn">Cole Carrigg <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Colorado Rockies</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">17.2%</td>
+      <td class="num">4</td>
+      <td class="num">437 / 445</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">1.82%<span class="am">+5395</span></td>
+    </tr><tr>
+      <td class="num rank">11</td>
+      <td class="bat"><span class="bn">Shea Langeliers <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Athletics</span></td>
+      <td class="vn">Chase Field</td>
+      <td class="num">25.8%</td>
+      <td class="num">28</td>
+      <td class="num">449 / 467</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">1.71%<span class="am">+5748</span></td>
+    </tr><tr>
+      <td class="num rank">12</td>
+      <td class="bat"><span class="bn">TJ Rumfield <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Colorado Rockies</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">13.8%</td>
+      <td class="num">16</td>
+      <td class="num">434 / 456</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">1.49%<span class="am">+6611</span></td>
+    </tr><tr>
+      <td class="num rank">13</td>
+      <td class="bat"><span class="bn">Junior Caminero <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span></td>
+      <td class="vn">Rogers Centre</td>
+      <td class="num">24.3%</td>
+      <td class="num">30</td>
+      <td class="num">439 / 463</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">1.35%<span class="am">+7307</span></td>
+    </tr><tr>
+      <td class="num rank">14</td>
+      <td class="bat"><span class="bn">Ezequiel Tovar <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Colorado Rockies</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">10.1%</td>
+      <td class="num">11</td>
+      <td class="num">435 / 441</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">1.27%<span class="am">+7774</span></td>
+    </tr><tr>
+      <td class="num rank">15</td>
+      <td class="bat"><span class="bn">Esmerlyn Valdez <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Pittsburgh Pirates</span></td>
+      <td class="vn">Yankee Stadium</td>
+      <td class="num">19.9%</td>
+      <td class="num">14</td>
+      <td class="num">432 / 461</td>
+      <td class="num"><span class="pos">+6 ft</span></td>
+      <td class="num plong">1.23%<span class="am">+8030</span></td>
+    </tr><tr>
+      <td class="num rank">16</td>
+      <td class="bat"><span class="bn">Bryce Eldridge <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">San Francisco Giants</span></td>
+      <td class="vn">Kauffman Stadium</td>
+      <td class="num">15.6%</td>
+      <td class="num">13</td>
+      <td class="num">451 / 458</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">1.06%<span class="am">+9334</span></td>
+    </tr><tr>
+      <td class="num rank">17</td>
+      <td class="bat"><span class="bn">Jo Adell <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Los Angeles Angels</span></td>
+      <td class="vn">Angel Stadium</td>
+      <td class="num">13.4%</td>
+      <td class="num">17</td>
+      <td class="num">447 / 468</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">1.00%<span class="am">+9900</span></td>
+    </tr><tr>
+      <td class="num rank">18</td>
+      <td class="bat"><span class="bn">Gabriel Moreno <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Arizona Diamondbacks</span></td>
+      <td class="vn">Chase Field</td>
+      <td class="num">9.5%</td>
+      <td class="num">9</td>
+      <td class="num">459 / 460</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">0.96%<span class="am">+10317</span></td>
+    </tr><tr>
+      <td class="num rank">19</td>
+      <td class="bat"><span class="bn">Yordan Alvarez <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Houston Astros</span></td>
+      <td class="vn">Daikin Park</td>
+      <td class="num">23.0%</td>
+      <td class="num">33</td>
+      <td class="num">428 / 455</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">0.95%<span class="am">+10426</span></td>
+    </tr><tr>
+      <td class="num rank">20</td>
+      <td class="bat"><span class="bn">Jordan Walker <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">St. Louis Cardinals</span></td>
+      <td class="vn">Angel Stadium</td>
+      <td class="num">17.7%</td>
+      <td class="num">23</td>
+      <td class="num">431 / 459</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">0.92%<span class="am">+10770</span></td>
+    </tr><tr>
+      <td class="num rank">21</td>
+      <td class="bat"><span class="bn">Coby Mayo <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Baltimore Orioles</span></td>
+      <td class="vn">Fenway Park</td>
+      <td class="num">16.7%</td>
+      <td class="num">15</td>
+      <td class="num">440 / 452</td>
+      <td class="num"><span class="pos">+3 ft</span></td>
+      <td class="num plong">0.91%<span class="am">+10889</span></td>
+    </tr><tr>
+      <td class="num rank">22</td>
+      <td class="bat"><span class="bn">Miguel Amaya <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Chicago Cubs</span></td>
+      <td class="vn">Wrigley Field</td>
+      <td class="num">12.3%</td>
+      <td class="num">5</td>
+      <td class="num">445 / 446</td>
+      <td class="num"><span class="pos">+2 ft</span></td>
+      <td class="num plong">0.88%<span class="am">+11264</span></td>
+    </tr><tr>
+      <td class="num rank">23</td>
+      <td class="bat"><span class="bn">Mike Trout <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Los Angeles Angels</span></td>
+      <td class="vn">Angel Stadium</td>
+      <td class="num">20.2%</td>
+      <td class="num">18</td>
+      <td class="num">440 / 446</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">0.88%<span class="am">+11264</span></td>
+    </tr><tr>
+      <td class="num rank">24</td>
+      <td class="bat"><span class="bn">CJ Abrams <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Washington Nationals</span></td>
+      <td class="vn">Coors Field</td>
+      <td class="num">28.2%</td>
+      <td class="num">22</td>
+      <td class="num">420 / 426</td>
+      <td class="num"><span class="pos">+15 ft</span></td>
+      <td class="num plong">0.87%<span class="am">+11394</span></td>
+    </tr><tr>
+      <td class="num rank">25</td>
+      <td class="bat"><span class="bn">Drake Baldwin <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span></td>
+      <td class="vn">Truist Park</td>
+      <td class="num">17.9%</td>
+      <td class="num">20</td>
+      <td class="num">427 / 473</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">0.86%<span class="am">+11528</span></td>
+    </tr><tr>
+      <td class="num rank">26</td>
+      <td class="bat"><span class="bn">Dalton Rushing <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Los Angeles Dodgers</span></td>
+      <td class="vn">Citizens Bank Park</td>
+      <td class="num">19.6%</td>
+      <td class="num">13</td>
+      <td class="num">423 / 450</td>
+      <td class="num"><span class="pos">+5 ft</span></td>
+      <td class="num plong">0.83%<span class="am">+11948</span></td>
+    </tr><tr>
+      <td class="num rank">27</td>
+      <td class="bat"><span class="bn">Tyler Soderstrom <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Athletics</span></td>
+      <td class="vn">Chase Field</td>
+      <td class="num">17.0%</td>
+      <td class="num">20</td>
+      <td class="num">436 / 462</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">0.82%<span class="am">+12095</span></td>
+    </tr><tr>
+      <td class="num rank">28</td>
+      <td class="bat"><span class="bn">Seiya Suzuki <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Chicago Cubs</span></td>
+      <td class="vn">Wrigley Field</td>
+      <td class="num">19.4%</td>
+      <td class="num">17</td>
+      <td class="num">436 / 455</td>
+      <td class="num"><span class="pos">+2 ft</span></td>
+      <td class="num plong">0.81%<span class="am">+12246</span></td>
+    </tr><tr>
+      <td class="num rank">29</td>
+      <td class="bat"><span class="bn">Jac Caglianone <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Kansas City Royals</span></td>
+      <td class="vn">Kauffman Stadium</td>
+      <td class="num">13.9%</td>
+      <td class="num">17</td>
+      <td class="num">443 / 460</td>
+      <td class="num"><span class="dim">—</span></td>
+      <td class="num plong">0.80%<span class="am">+12400</span></td>
+    </tr><tr>
+      <td class="num rank">30</td>
+      <td class="bat"><span class="bn">Willson Contreras <span class="lc proj" title="Projected lineup — not yet official">Proj</span></span>
+          <span class="tm">Boston Red Sox</span></td>
+      <td class="vn">Fenway Park</td>
+      <td class="num">22.2%</td>
+      <td class="num">24</td>
+      <td class="num">432 / 449</td>
+      <td class="num"><span class="pos">+3 ft</span></td>
+      <td class="num plong">0.78%<span class="am">+12721</span></td>
+    </tr></tbody></table></div>
+<div class="disclaimer">Simulation-based estimates; pool payout depends on the promo's pool
+size and number of winning tickets, which are not modeled. Informational and entertainment
+purposes only — not investment advice.</div>
+</div></body></html>
