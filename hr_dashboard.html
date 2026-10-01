@@ -172,7 +172,7 @@
     <div class="wordmark">PROFIT<span class="accent">PATH</span></div>
     <span class="sports-suffix">Sports</span>
     <div class="tagline">Dinger Bot 1000</div>
-    <div class="hero-meta">Updated <b>Oct 1, 2026 · 12:27 AM MDT</b> · <b>0</b> games today
+    <div class="hero-meta">Updated <b>Oct 1, 2026 · 7:31 AM MDT</b> · <b>1</b> games today
       &nbsp;·&nbsp; <a href="track_record.html" style="color:var(--green);text-decoration:none">Track Record →</a>
       &nbsp;·&nbsp; <a href="longest_dinger.html" style="color:var(--yellow);text-decoration:none">💣 Deep Dinger →</a></div>
     <div class="live-line"><span id="live-badge" class="live-badge">⚡ loading live odds…</span></div>
@@ -186,13 +186,771 @@
 </div>
 
 <div class="filters">
-  <button class="fbtn active" data-f="all">All (0)</button>
-  <button class="fbtn sig" data-f="both" title="Plays where the model says +EV AND the price beats the de-vigged fair line — the two signals agree">✅ Both Signals (0)</button>
-  <button class="fbtn" data-f="STRONG">★★★ Strong (0)</button>
+  <button class="fbtn active" data-f="all">All (16)</button>
+  <button class="fbtn sig" data-f="both" title="Plays where the model says +EV AND the price beats the de-vigged fair line — the two signals agree">✅ Both Signals (1)</button>
+  <button class="fbtn" data-f="STRONG">★★★ Strong (1)</button>
   <button class="fbtn" data-f="LEAN">★★ Lean (0)</button>
 </div>
 
-<div class="empty">No HR plays to show. Lineups may not be posted yet, or no props cleared the threshold.</div>
+<div id="view-flat"><div class="tscroll"><table class="tbl solo"><thead><tr>
+  <th>Batter</th><th>Pitcher</th>
+  <th class="num sortable" data-sort="bvpscore" title="HR / AB vs today's pitcher — click to sort (most HR, fewest AB first)">BvP HR/AB</th>
+  <th class="num sortable" data-sort="model" title="Model's HR probability — click to sort">Model</th>
+  <th class="num sortable" data-sort="fair" title="De-vigged fair probability — click to sort">Fair</th>
+  <th class="num sortable" data-sort="edge" title="Model minus fair, in points — click to sort">Edge</th>
+  <th class="num">Odds</th>
+  <th class="num" title="Enter the price you can actually get — the EV & vs-Fair columns then use it">Your Odds</th>
+  <th class="num sortable" data-sort="ev" title="Expected value at the price (your odds if entered, else best) per the model — click to sort high→low">EV</th>
+  <th class="num sortable" data-sort="vsfair" title="How the price compares to the de-vigged fair line — click to sort (beats fair most first)">vs Fair</th>
+  <th>Tier</th><th>Flags</th>
+</tr></thead><tbody>
+      <tr class="row tier-PASS" data-bid="686948" data-player="Drake Baldwin" data-edge="0.0613" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1807" data-fair="0.1194" data-fairok="1" data-best="700" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">4</span>
+          <span class="bn">Drake Baldwin <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">18.1%<span class="am">+453</span></td>
+        <td class="num fair">11.9% <span class="am">+737</span></td>
+        <td class="num edge edge-strong-pos">+6.1%</td>
+        <td class="num odds"><span class="px">+700</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df0"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Drake Baldwin · to hit a HR (Over 0.5) — 3 de-vigged, 4 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+690</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+680</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+669</td><td class="num">-733</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+565</td><td class="num">-1585</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+475</td><td class="num">-1100</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+450</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="669016" data-player="Brandon Marsh" data-edge="0.0478" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1495" data-fair="0.1017" data-fairok="1" data-best="800" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">6</span>
+          <span class="bn">Brandon Marsh <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">14.9%<span class="am">+569</span></td>
+        <td class="num fair">10.2% <span class="am">+884</span></td>
+        <td class="num edge edge-pos">+4.8%</td>
+        <td class="num odds"><span class="px">+800</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df1"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Brandon Marsh · to hit a HR (Over 0.5) — 2 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+790</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+780</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+770</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+735</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+650</td><td class="num">-2245</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="621566" data-player="Matt Olson" data-edge="0.0475" data-bvphr="0" data-bvpscore="0.0000" data-model="0.2037" data-fair="0.1562" data-fairok="1" data-best="491" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">3</span>
+          <span class="bn">Matt Olson <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">20.4%<span class="am">+391</span></td>
+        <td class="num fair">15.6% <span class="am">+540</span></td>
+        <td class="num edge edge-pos">+4.8%</td>
+        <td class="num odds"><span class="px">+491</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df2"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Matt Olson · to hit a HR (Over 0.5) — 3 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">DraftKings</td><td class="num over">+491</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+490</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+488</td><td class="num">-525</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+420</td><td class="num">-930</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+400</td><td class="num">-800</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+340</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="573262" data-player="Mike Yastrzemski" data-edge="0.0299" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1276" data-fair="0.0977" data-fairok="1" data-best="890" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">7</span>
+          <span class="bn">Mike Yastrzemski <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.8%<span class="am">+684</span></td>
+        <td class="num fair">9.8% <span class="am">+924</span></td>
+        <td class="num edge edge-flat">+3.0%</td>
+        <td class="num odds"><span class="px">+890</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df3"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Mike Yastrzemski · to hit a HR (Over 0.5) — 3 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">DraftKings</td><td class="num over">+890</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+823</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+820</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+809</td><td class="num">-1011</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+705</td><td class="num">-2850</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+625</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="669221" data-player="Sean Murphy" data-edge="0.0288" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1151" data-fair="0.0863" data-fairok="1" data-best="1000" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">9</span>
+          <span class="bn">Sean Murphy <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">11.5%<span class="am">+769</span></td>
+        <td class="num fair">8.6% <span class="am">+1059</span></td>
+        <td class="num edge edge-flat">+2.9%</td>
+        <td class="num odds"><span class="px">+1000</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df4"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Sean Murphy · to hit a HR (Over 0.5) — 2 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+980</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+940</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+910</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+892</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+780</td><td class="num">-4215</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+650</td><td class="num">-2000</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="643289" data-player="Mauricio Dubón" data-edge="0.0272" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0881" data-fair="0.0609" data-fairok="1" data-best="1500" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">5</span>
+          <span class="bn">Mauricio Dubón <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">8.8%<span class="am">+1035</span></td>
+        <td class="num fair">6.1% <span class="am">+1541</span></td>
+        <td class="num edge edge-flat">+2.7%</td>
+        <td class="num odds"><span class="px">+1500</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="df5"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Mauricio Dubón · to hit a HR (Over 0.5) — 1 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+1500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1420</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1329</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1176</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1050</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-3500</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="663586" data-player="Austin Riley" data-edge="0.0215" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1403" data-fair="0.1188" data-fairok="1" data-best="700" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">8</span>
+          <span class="bn">Austin Riley <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">14.0%<span class="am">+613</span></td>
+        <td class="num fair">11.9% <span class="am">+742</span></td>
+        <td class="num edge edge-flat">+2.1%</td>
+        <td class="num odds"><span class="px">+700</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="df6"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Austin Riley · to hit a HR (Over 0.5) — 3 de-vigged, 4 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+700</td><td class="num">-733</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+660</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+650</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+630</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+565</td><td class="num">-1580</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+500</td><td class="num">-1200</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="702222" data-player="Justin Crawford" data-edge="0.0193" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0779" data-fair="0.0586" data-fairok="1" data-best="1800" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">8</span>
+          <span class="bn">Justin Crawford <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">7.8%<span class="am">+1184</span></td>
+        <td class="num fair">5.9% <span class="am">+1607</span></td>
+        <td class="num edge edge-flat">+1.9%</td>
+        <td class="num odds"><span class="px">+1800</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df7"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Justin Crawford · to hit a HR (Over 0.5) — 2 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+1800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1438</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1372</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1360</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1100</td><td class="num">-5000</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+980</td><td class="num">-41570</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="645277" data-player="Ozzie Albies" data-edge="0.0169" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1205" data-fair="0.1036" data-fairok="1" data-best="850" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">6</span>
+          <span class="bn">Ozzie Albies <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.0%<span class="am">+730</span></td>
+        <td class="num fair">10.4% <span class="am">+865</span></td>
+        <td class="num edge edge-flat">+1.7%</td>
+        <td class="num odds"><span class="px">+850</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df8"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Ozzie Albies · to hit a HR (Over 0.5) — 2 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+790</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+770</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+760</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+635</td><td class="num">-2075</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="547180" data-player="Bryce Harper" data-edge="0.0156" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1893" data-fair="0.1737" data-fairok="1" data-best="451" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">3</span>
+          <span class="bn">Bryce Harper <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">18.9%<span class="am">+428</span></td>
+        <td class="num fair">17.4% <span class="am">+476</span></td>
+        <td class="num edge edge-flat">+1.6%</td>
+        <td class="num odds"><span class="px">+451</span><span class="bk">Prophetexchange</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="df9"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Bryce Harper · to hit a HR (Over 0.5) — 4 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+456</td><td class="num">-545</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">Prophetexchange</td><td class="num over">+451</td><td class="num">-592</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+430</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+425</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+421</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+380</td><td class="num">-750</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+370</td><td class="num">-780</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="664761" data-player="Alec Bohm" data-edge="0.0087" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1078" data-fair="0.0991" data-fairok="1" data-best="900" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">5</span>
+          <span class="bn">Alec Bohm <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">10.8%<span class="am">+828</span></td>
+        <td class="num fair">9.9% <span class="am">+909</span></td>
+        <td class="num edge edge-flat">+0.9%</td>
+        <td class="num odds"><span class="px">+900</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df10"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Alec Bohm · to hit a HR (Over 0.5) — 2 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+860</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+852</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+790</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+665</td><td class="num">-2390</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="656941" data-player="Kyle Schwarber" data-edge="0.0061" data-bvphr="0" data-bvpscore="0.0000" data-model="0.2437" data-fair="0.2376" data-fairok="1" data-best="314" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">2</span>
+          <span class="bn">Kyle Schwarber <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">24.4%<span class="am">+310</span></td>
+        <td class="num fair">23.8% <span class="am">+321</span></td>
+        <td class="num edge edge-flat">+0.6%</td>
+        <td class="num odds"><span class="px">+314</span><span class="bk">Prophetexchange</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df11"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Kyle Schwarber · to hit a HR (Over 0.5) — 4 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Prophetexchange</td><td class="num over">+314</td><td class="num">-378</td><td class="src">de-vig</td></tr><tr><td class="book">Novig</td><td class="num over">+308</td><td class="num">-344</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+284</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+280</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+280</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+280</td><td class="num">-450</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+275</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+275</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+255</td><td class="num">-485</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="592663" data-player="J.T. Realmuto" data-edge="0.0048" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1026" data-fair="0.0978" data-fairok="1" data-best="900" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">9</span>
+          <span class="bn">J.T. Realmuto <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">10.3%<span class="am">+875</span></td>
+        <td class="num fair">9.8% <span class="am">+923</span></td>
+        <td class="num edge edge-flat">+0.5%</td>
+        <td class="num odds"><span class="px">+900</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df12"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">J.T. Realmuto · to hit a HR (Over 0.5) — 2 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+820</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+809</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+804</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+790</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+655</td><td class="num">-2280</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="681082" data-player="Bryson Stott" data-edge="-0.0037" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1028" data-fair="0.1065" data-fairok="1" data-best="850" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">4</span>
+          <span class="bn">Bryson Stott <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">10.3%<span class="am">+873</span></td>
+        <td class="num fair">10.7% <span class="am">+839</span></td>
+        <td class="num edge edge-flat">-0.4%</td>
+        <td class="num odds"><span class="px">+850</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df13"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Bryson Stott · to hit a HR (Over 0.5) — 2 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+809</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+760</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+720</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+625</td><td class="num">-2030</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="607208" data-player="Trea Turner" data-edge="-0.0100" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1023" data-fair="0.1123" data-fairok="1" data-best="725" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">1</span>
+          <span class="bn">Trea Turner <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">10.2%<span class="am">+878</span></td>
+        <td class="num fair">11.2% <span class="am">+791</span></td>
+        <td class="num edge edge-flat">-1.0%</td>
+        <td class="num odds"><span class="px">+725</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df14"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Trea Turner · to hit a HR (Over 0.5) — 3 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+733</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">BetMGM</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+710</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+686</td><td class="num">-1123</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+680</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+575</td><td class="num">-1640</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+550</td><td class="num">-1400</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-STRONG" data-bid="624641" data-player="Edmundo Sosa" data-edge="-0.0116" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1338" data-fair="0.1454" data-fairok="1" data-best="725" data-sig="both" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">7</span>
+          <span class="bn">Edmundo Sosa <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">13.4%<span class="am">+647</span></td>
+        <td class="num fair">14.5% <span class="am">+588</span></td>
+        <td class="num edge edge-flat">-1.2%</td>
+        <td class="num odds"><span class="px">+725</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge strong">★★★ STRONG</span></td>
+        <td class="flags"><span class="sig-both" title="Model says +EV AND the price beats the de-vigged fair line — both signals agree">✅ BOTH</span><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="df15"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Edmundo Sosa · to hit a HR (Over 0.5) — 2 de-vigged, 1 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+500</td><td class="num">-1200</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+495</td><td class="num">-1205</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr></tbody></table></div></div><div id="view-games" style="display:none"><div class="game"><div class="game-head">Atlanta Braves vs Philadelphia Phillies  ·  Truist Park</div><div class="tscroll"><table class="tbl gtbl"><thead><tr>
+  <th>Batter</th><th>Pitcher</th>
+  <th class="num sortable" data-sort="bvpscore" title="HR / AB vs today's pitcher — click to sort (most HR, fewest AB first)">BvP HR/AB</th>
+  <th class="num sortable" data-sort="model" title="Model's HR probability — click to sort">Model</th>
+  <th class="num sortable" data-sort="fair" title="De-vigged fair probability — click to sort">Fair</th>
+  <th class="num sortable" data-sort="edge" title="Model minus fair, in points — click to sort">Edge</th>
+  <th class="num">Odds</th>
+  <th class="num" title="Enter the price you can actually get — the EV & vs-Fair columns then use it">Your Odds</th>
+  <th class="num sortable" data-sort="ev" title="Expected value at the price (your odds if entered, else best) per the model — click to sort high→low">EV</th>
+  <th class="num sortable" data-sort="vsfair" title="How the price compares to the de-vigged fair line — click to sort (beats fair most first)">vs Fair</th>
+  <th>Tier</th><th>Flags</th>
+</tr></thead><tbody>
+      <tr class="row tier-PASS" data-bid="686948" data-player="Drake Baldwin" data-edge="0.0613" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1807" data-fair="0.1194" data-fairok="1" data-best="700" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">4</span>
+          <span class="bn">Drake Baldwin <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">18.1%<span class="am">+453</span></td>
+        <td class="num fair">11.9% <span class="am">+737</span></td>
+        <td class="num edge edge-strong-pos">+6.1%</td>
+        <td class="num odds"><span class="px">+700</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_0"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Drake Baldwin · to hit a HR (Over 0.5) — 3 de-vigged, 4 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+690</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+680</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+669</td><td class="num">-733</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+565</td><td class="num">-1585</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+475</td><td class="num">-1100</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+450</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="669016" data-player="Brandon Marsh" data-edge="0.0478" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1495" data-fair="0.1017" data-fairok="1" data-best="800" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">6</span>
+          <span class="bn">Brandon Marsh <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">14.9%<span class="am">+569</span></td>
+        <td class="num fair">10.2% <span class="am">+884</span></td>
+        <td class="num edge edge-pos">+4.8%</td>
+        <td class="num odds"><span class="px">+800</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_1"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Brandon Marsh · to hit a HR (Over 0.5) — 2 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+790</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+780</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+770</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+735</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+650</td><td class="num">-2245</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="621566" data-player="Matt Olson" data-edge="0.0475" data-bvphr="0" data-bvpscore="0.0000" data-model="0.2037" data-fair="0.1562" data-fairok="1" data-best="491" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">3</span>
+          <span class="bn">Matt Olson <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">20.4%<span class="am">+391</span></td>
+        <td class="num fair">15.6% <span class="am">+540</span></td>
+        <td class="num edge edge-pos">+4.8%</td>
+        <td class="num odds"><span class="px">+491</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_2"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Matt Olson · to hit a HR (Over 0.5) — 3 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">DraftKings</td><td class="num over">+491</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+490</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+488</td><td class="num">-525</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+420</td><td class="num">-930</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+400</td><td class="num">-800</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+340</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="573262" data-player="Mike Yastrzemski" data-edge="0.0299" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1276" data-fair="0.0977" data-fairok="1" data-best="890" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">7</span>
+          <span class="bn">Mike Yastrzemski <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.8%<span class="am">+684</span></td>
+        <td class="num fair">9.8% <span class="am">+924</span></td>
+        <td class="num edge edge-flat">+3.0%</td>
+        <td class="num odds"><span class="px">+890</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_3"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Mike Yastrzemski · to hit a HR (Over 0.5) — 3 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">DraftKings</td><td class="num over">+890</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+823</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+820</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+809</td><td class="num">-1011</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+705</td><td class="num">-2850</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+625</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="669221" data-player="Sean Murphy" data-edge="0.0288" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1151" data-fair="0.0863" data-fairok="1" data-best="1000" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">9</span>
+          <span class="bn">Sean Murphy <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">11.5%<span class="am">+769</span></td>
+        <td class="num fair">8.6% <span class="am">+1059</span></td>
+        <td class="num edge edge-flat">+2.9%</td>
+        <td class="num odds"><span class="px">+1000</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_4"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Sean Murphy · to hit a HR (Over 0.5) — 2 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+980</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+940</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+910</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+892</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+780</td><td class="num">-4215</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+650</td><td class="num">-2000</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="643289" data-player="Mauricio Dubón" data-edge="0.0272" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0881" data-fair="0.0609" data-fairok="1" data-best="1500" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">5</span>
+          <span class="bn">Mauricio Dubón <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">8.8%<span class="am">+1035</span></td>
+        <td class="num fair">6.1% <span class="am">+1541</span></td>
+        <td class="num edge edge-flat">+2.7%</td>
+        <td class="num odds"><span class="px">+1500</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="dg849844_5"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Mauricio Dubón · to hit a HR (Over 0.5) — 1 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+1500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1420</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1329</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1176</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1050</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-3500</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="663586" data-player="Austin Riley" data-edge="0.0215" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1403" data-fair="0.1188" data-fairok="1" data-best="700" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">8</span>
+          <span class="bn">Austin Riley <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">14.0%<span class="am">+613</span></td>
+        <td class="num fair">11.9% <span class="am">+742</span></td>
+        <td class="num edge edge-flat">+2.1%</td>
+        <td class="num odds"><span class="px">+700</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="dg849844_6"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Austin Riley · to hit a HR (Over 0.5) — 3 de-vigged, 4 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+700</td><td class="num">-733</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+660</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+650</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+630</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+565</td><td class="num">-1580</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+500</td><td class="num">-1200</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="702222" data-player="Justin Crawford" data-edge="0.0193" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0779" data-fair="0.0586" data-fairok="1" data-best="1800" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">8</span>
+          <span class="bn">Justin Crawford <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">7.8%<span class="am">+1184</span></td>
+        <td class="num fair">5.9% <span class="am">+1607</span></td>
+        <td class="num edge edge-flat">+1.9%</td>
+        <td class="num odds"><span class="px">+1800</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_7"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Justin Crawford · to hit a HR (Over 0.5) — 2 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+1800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1438</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1372</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1360</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1100</td><td class="num">-5000</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+980</td><td class="num">-41570</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="645277" data-player="Ozzie Albies" data-edge="0.0169" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1205" data-fair="0.1036" data-fairok="1" data-best="850" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">6</span>
+          <span class="bn">Ozzie Albies <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Atlanta Braves</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.0%<span class="am">+730</span></td>
+        <td class="num fair">10.4% <span class="am">+865</span></td>
+        <td class="num edge edge-flat">+1.7%</td>
+        <td class="num odds"><span class="px">+850</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_8"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Ozzie Albies · to hit a HR (Over 0.5) — 2 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+790</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+770</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+760</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+635</td><td class="num">-2075</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="547180" data-player="Bryce Harper" data-edge="0.0156" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1893" data-fair="0.1737" data-fairok="1" data-best="451" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">3</span>
+          <span class="bn">Bryce Harper <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">18.9%<span class="am">+428</span></td>
+        <td class="num fair">17.4% <span class="am">+476</span></td>
+        <td class="num edge edge-flat">+1.6%</td>
+        <td class="num odds"><span class="px">+451</span><span class="bk">Prophetexchange</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="dg849844_9"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Bryce Harper · to hit a HR (Over 0.5) — 4 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+456</td><td class="num">-545</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">Prophetexchange</td><td class="num over">+451</td><td class="num">-592</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+430</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+425</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+421</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+380</td><td class="num">-750</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+370</td><td class="num">-780</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="664761" data-player="Alec Bohm" data-edge="0.0087" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1078" data-fair="0.0991" data-fairok="1" data-best="900" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">5</span>
+          <span class="bn">Alec Bohm <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">10.8%<span class="am">+828</span></td>
+        <td class="num fair">9.9% <span class="am">+909</span></td>
+        <td class="num edge edge-flat">+0.9%</td>
+        <td class="num odds"><span class="px">+900</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_10"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Alec Bohm · to hit a HR (Over 0.5) — 2 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+860</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+852</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+790</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+665</td><td class="num">-2390</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="656941" data-player="Kyle Schwarber" data-edge="0.0061" data-bvphr="0" data-bvpscore="0.0000" data-model="0.2437" data-fair="0.2376" data-fairok="1" data-best="314" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">2</span>
+          <span class="bn">Kyle Schwarber <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">24.4%<span class="am">+310</span></td>
+        <td class="num fair">23.8% <span class="am">+321</span></td>
+        <td class="num edge edge-flat">+0.6%</td>
+        <td class="num odds"><span class="px">+314</span><span class="bk">Prophetexchange</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_11"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Kyle Schwarber · to hit a HR (Over 0.5) — 4 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Prophetexchange</td><td class="num over">+314</td><td class="num">-378</td><td class="src">de-vig</td></tr><tr><td class="book">Novig</td><td class="num over">+308</td><td class="num">-344</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+284</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+280</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+280</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+280</td><td class="num">-450</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+275</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+275</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+255</td><td class="num">-485</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="592663" data-player="J.T. Realmuto" data-edge="0.0048" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1026" data-fair="0.0978" data-fairok="1" data-best="900" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">9</span>
+          <span class="bn">J.T. Realmuto <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">10.3%<span class="am">+875</span></td>
+        <td class="num fair">9.8% <span class="am">+923</span></td>
+        <td class="num edge edge-flat">+0.5%</td>
+        <td class="num odds"><span class="px">+900</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_12"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">J.T. Realmuto · to hit a HR (Over 0.5) — 2 de-vigged, 6 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+820</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+809</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+804</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+790</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+655</td><td class="num">-2280</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="681082" data-player="Bryson Stott" data-edge="-0.0037" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1028" data-fair="0.1065" data-fairok="1" data-best="850" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">4</span>
+          <span class="bn">Bryson Stott <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">10.3%<span class="am">+873</span></td>
+        <td class="num fair">10.7% <span class="am">+839</span></td>
+        <td class="num edge edge-flat">-0.4%</td>
+        <td class="num odds"><span class="px">+850</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_13"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Bryson Stott · to hit a HR (Over 0.5) — 2 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+809</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+760</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+720</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+625</td><td class="num">-2030</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+600</td><td class="num">-1600</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="607208" data-player="Trea Turner" data-edge="-0.0100" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1023" data-fair="0.1123" data-fairok="1" data-best="725" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">1</span>
+          <span class="bn">Trea Turner <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">10.2%<span class="am">+878</span></td>
+        <td class="num fair">11.2% <span class="am">+791</span></td>
+        <td class="num edge edge-flat">-1.0%</td>
+        <td class="num odds"><span class="px">+725</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849844_14"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Trea Turner · to hit a HR (Over 0.5) — 3 de-vigged, 5 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+733</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">BetMGM</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+710</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+686</td><td class="num">-1123</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+680</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+575</td><td class="num">-1640</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+550</td><td class="num">-1400</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-STRONG" data-bid="624641" data-player="Edmundo Sosa" data-edge="-0.0116" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1338" data-fair="0.1454" data-fairok="1" data-best="725" data-sig="both" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">7</span>
+          <span class="bn">Edmundo Sosa <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Philadelphia Phillies</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Truist Park</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">13.4%<span class="am">+647</span></td>
+        <td class="num fair">14.5% <span class="am">+588</span></td>
+        <td class="num edge edge-flat">-1.2%</td>
+        <td class="num odds"><span class="px">+725</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge strong">★★★ STRONG</span></td>
+        <td class="flags"><span class="sig-both" title="Model says +EV AND the price beats the de-vigged fair line — both signals agree">✅ BOTH</span><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="dg849844_15"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Edmundo Sosa · to hit a HR (Over 0.5) — 2 de-vigged, 1 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">BetMGM</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+500</td><td class="num">-1200</td><td class="src">de-vig</td></tr><tr><td class="book">Fliff</td><td class="num over">+495</td><td class="num">-1205</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr></tbody></table></div></div></div>
 
 <div class="disclaimer">
   Edge is graded against the de-vigged fair line. Model and Fair show the implied
