@@ -172,7 +172,7 @@
     <div class="wordmark">PROFIT<span class="accent">PATH</span></div>
     <span class="sports-suffix">Sports</span>
     <div class="tagline">Dinger Bot 1000</div>
-    <div class="hero-meta">Updated <b>Oct 28, 2026 · 12:08 AM MDT</b> · <b>0</b> games today
+    <div class="hero-meta">Updated <b>Oct 28, 2026 · 7:31 AM MDT</b> · <b>1</b> games today
       &nbsp;·&nbsp; <a href="track_record.html" style="color:var(--green);text-decoration:none">Track Record →</a>
       &nbsp;·&nbsp; <a href="longest_dinger.html" style="color:var(--yellow);text-decoration:none">💣 Deep Dinger →</a></div>
     <div class="live-line"><span id="live-badge" class="live-badge">⚡ loading live odds…</span></div>
@@ -186,13 +186,771 @@
 </div>
 
 <div class="filters">
-  <button class="fbtn active" data-f="all">All (0)</button>
+  <button class="fbtn active" data-f="all">All (16)</button>
   <button class="fbtn sig" data-f="both" title="Plays where the model says +EV AND the price beats the de-vigged fair line — the two signals agree">✅ Both Signals (0)</button>
   <button class="fbtn" data-f="STRONG">★★★ Strong (0)</button>
   <button class="fbtn" data-f="LEAN">★★ Lean (0)</button>
 </div>
 
-<div class="empty">No HR plays to show. Lineups may not be posted yet, or no props cleared the threshold.</div>
+<div id="view-flat"><div class="tscroll"><table class="tbl solo"><thead><tr>
+  <th>Batter</th><th>Pitcher</th>
+  <th class="num sortable" data-sort="bvpscore" title="HR / AB vs today's pitcher — click to sort (most HR, fewest AB first)">BvP HR/AB</th>
+  <th class="num sortable" data-sort="model" title="Model's HR probability — click to sort">Model</th>
+  <th class="num sortable" data-sort="fair" title="De-vigged fair probability — click to sort">Fair</th>
+  <th class="num sortable" data-sort="edge" title="Model minus fair, in points — click to sort">Edge</th>
+  <th class="num">Odds</th>
+  <th class="num" title="Enter the price you can actually get — the EV & vs-Fair columns then use it">Your Odds</th>
+  <th class="num sortable" data-sort="ev" title="Expected value at the price (your odds if entered, else best) per the model — click to sort high→low">EV</th>
+  <th class="num sortable" data-sort="vsfair" title="How the price compares to the de-vigged fair line — click to sort (beats fair most first)">vs Fair</th>
+  <th>Tier</th><th>Flags</th>
+</tr></thead><tbody>
+      <tr class="row tier-PASS" data-bid="669003" data-player="Garrett Mitchell" data-edge="0.0380" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1256" data-fair="0.0876" data-fairok="1" data-best="1120" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">6</span>
+          <span class="bn">Garrett Mitchell <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.6%<span class="am">+696</span></td>
+        <td class="num fair">8.8% <span class="am">+1041</span></td>
+        <td class="num edge edge-pos">+3.8%</td>
+        <td class="num odds"><span class="px">+1120</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df0"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Garrett Mitchell · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">FanDuel</td><td class="num over">+1120</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+1111</td><td class="num">-1623</td><td class="src">de-vig</td></tr><tr><td class="book">Bovada</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1076</td><td class="num">-1329</td><td class="src">de-vig</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1029</td><td class="num">-1940</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+950</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-2500</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+745</td><td class="num">-3460</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+650</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="666152" data-player="David Hamilton" data-edge="0.0373" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0988" data-fair="0.0615" data-fairok="1" data-best="1400" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">9</span>
+          <span class="bn">David Hamilton <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">9.9%<span class="am">+912</span></td>
+        <td class="num fair">6.2% <span class="am">+1526</span></td>
+        <td class="num edge edge-pos">+3.7%</td>
+        <td class="num odds"><span class="px">+1400</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="df1"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">David Hamilton · to hit a HR (Over 0.5) — 2 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1329</td><td class="num">-2464</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="668930" data-player="Brice Turang" data-edge="0.0343" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1227" data-fair="0.0884" data-fairok="1" data-best="920" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">5</span>
+          <span class="bn">Brice Turang <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.3%<span class="am">+715</span></td>
+        <td class="num fair">8.8% <span class="am">+1032</span></td>
+        <td class="num edge edge-pos">+3.4%</td>
+        <td class="num odds"><span class="px">+920</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df2"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Brice Turang · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Kalshi</td><td class="num over">+977</td><td class="num">-1377</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+920</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+920</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+900</td><td class="num">-1150</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-2500</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+720</td><td class="num">-3085</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+650</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+650</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+625</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="641343" data-player="Jake Bauers" data-edge="0.0227" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1739" data-fair="0.1512" data-fairok="1" data-best="550" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">2</span>
+          <span class="bn">Jake Bauers <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">17.4%<span class="am">+475</span></td>
+        <td class="num fair">15.1% <span class="am">+561</span></td>
+        <td class="num edge edge-flat">+2.3%</td>
+        <td class="num odds"><span class="px">+550</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df3"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Jake Bauers · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+550</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+547</td><td class="num">-760</td><td class="src">de-vig</td></tr><tr><td class="book">Novig</td><td class="num over">+545</td><td class="num">-641</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+524</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+520</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+490</td><td class="num">-714</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+475</td><td class="num">-800</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+460</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+460</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+450</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+440</td><td class="num">-1000</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="686217" data-player="Sal Frelick" data-edge="0.0219" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0835" data-fair="0.0616" data-fairok="1" data-best="1400" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">8</span>
+          <span class="bn">Sal Frelick <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">8.3%<span class="am">+1098</span></td>
+        <td class="num fair">6.2% <span class="am">+1524</span></td>
+        <td class="num edge edge-flat">+2.2%</td>
+        <td class="num odds"><span class="px">+1400</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="df4"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Sal Frelick · to hit a HR (Over 0.5) — 3 de-vigged, 9 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Ballybet</td><td class="num over">+1500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">Hard Rock</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1329</td><td class="num">-2603</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1320</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1200</td><td class="num">-2600</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="689414" data-player="Liam Hicks" data-edge="0.0198" data-bvphr="0" data-bvpscore="-0.0020" data-model="0.0926" data-fair="0.0728" data-fairok="1" data-best="1260" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">4</span>
+          <span class="bn">Liam Hicks <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab">0/2</td>
+        <td class="num model">9.3%<span class="am">+980</span></td>
+        <td class="num fair">7.3% <span class="am">+1273</span></td>
+        <td class="num edge edge-flat">+2.0%</td>
+        <td class="num odds"><span class="px">+1260</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="df5"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Liam Hicks · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+1567</td><td class="num">-3604</td><td class="src">de-vig</td></tr><tr><td class="book">Bovada</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+1260</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1220</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1176</td><td class="num">-8951</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1050</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1050</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+920</td><td class="num">-12560</td><td class="src">de-vig</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="666018" data-player="Jonathan Aranda" data-edge="0.0142" data-bvphr="0" data-bvpscore="-0.0030" data-model="0.1023" data-fair="0.0881" data-fairok="1" data-best="980" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">2</span>
+          <span class="bn">Jonathan Aranda <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab">0/3</td>
+        <td class="num model">10.2%<span class="am">+878</span></td>
+        <td class="num fair">8.8% <span class="am">+1035</span></td>
+        <td class="num edge edge-flat">+1.4%</td>
+        <td class="num odds"><span class="px">+980</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df6"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Jonathan Aranda · to hit a HR (Over 0.5) — 5 de-vigged, 9 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+1011</td><td class="num">-1233</td><td class="src">de-vig</td></tr><tr><td class="book">Bovada</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+980</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+977</td><td class="num">-1377</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+930</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+920</td><td class="num">-1750</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-2500</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+715</td><td class="num">-3025</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+625</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="806198" data-player="Cooper Pratt" data-edge="0.0100" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0800" data-fair="0.0700" data-fairok="1" data-best="1350" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">7</span>
+          <span class="bn">Cooper Pratt <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">8.0%<span class="am">+1150</span></td>
+        <td class="num fair">7.0% <span class="am">+1329</span></td>
+        <td class="num edge edge-flat">+1.0%</td>
+        <td class="num odds"><span class="px">+1350</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="df7"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Cooper Pratt · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+1567</td><td class="num">-1900</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">BetMGM</td><td class="num over">+1350</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+1284</td><td class="num">-1623</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1260</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1127</td><td class="num">-2758</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+935</td><td class="num">-15285</td><td class="src">de-vig</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="650490" data-player="Yandy Díaz" data-edge="0.0098" data-bvphr="1" data-bvpscore="0.9970" data-model="0.1133" data-fair="0.1035" data-fairok="1" data-best="820" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">1</span>
+          <span class="bn">Yandy Díaz <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab">1/3</td>
+        <td class="num model">11.3%<span class="am">+783</span></td>
+        <td class="num fair">10.3% <span class="am">+866</span></td>
+        <td class="num edge edge-flat">+1.0%</td>
+        <td class="num odds"><span class="px">+820</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df8"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Yandy Díaz · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+900</td><td class="num">-1011</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-2500</td><td class="src">de-vig</td></tr><tr><td class="book">Kalshi</td><td class="num over">+869</td><td class="num">-1048</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+820</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+794</td><td class="num">-1633</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+780</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+660</td><td class="num">-2345</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="676356" data-player="Jonny DeLuca" data-edge="0.0058" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0782" data-fair="0.0724" data-fairok="1" data-best="1200" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">5</span>
+          <span class="bn">Jonny DeLuca <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">7.8%<span class="am">+1179</span></td>
+        <td class="num fair">7.2% <span class="am">+1281</span></td>
+        <td class="num edge edge-flat">+0.6%</td>
+        <td class="num odds"><span class="px">+1200</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df9"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Jonny DeLuca · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+1567</td><td class="num">-1983</td><td class="src">de-vig</td></tr><tr><td class="book">Kalshi</td><td class="num over">+1284</td><td class="num">-1623</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1140</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1127</td><td class="num">-2346</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1100</td><td class="num">-3500</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+820</td><td class="num">-5310</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="592885" data-player="Christian Yelich" data-edge="0.0033" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1125" data-fair="0.1092" data-fairok="1" data-best="800" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">3</span>
+          <span class="bn">Christian Yelich <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">11.2%<span class="am">+789</span></td>
+        <td class="num fair">10.9% <span class="am">+816</span></td>
+        <td class="num edge edge-flat">+0.3%</td>
+        <td class="num odds"><span class="px">+800</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df10"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Christian Yelich · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+809</td><td class="num">-1076</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">Hard Rock</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+764</td><td class="num">-1225</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+760</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+730</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+700</td><td class="num">-1600</td><td class="src">de-vig</td></tr><tr><td class="book">Betonline</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+625</td><td class="num">-1990</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+600</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="680700" data-player="Richie Palacios" data-edge="0.0029" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0776" data-fair="0.0747" data-fairok="1" data-best="1340" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">7</span>
+          <span class="bn">Richie Palacios <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">7.8%<span class="am">+1189</span></td>
+        <td class="num fair">7.5% <span class="am">+1239</span></td>
+        <td class="num edge edge-flat">+0.3%</td>
+        <td class="num odds"><span class="px">+1340</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df11"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Richie Palacios · to hit a HR (Over 0.5) — 3 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">DraftKings</td><td class="num over">+1340</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1329</td><td class="num">-3233</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+940</td><td class="num">-17145</td><td class="src">de-vig</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="670764" data-player="Taylor Walls" data-edge="-0.0061" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0430" data-fair="0.0491" data-fairok="1" data-best="1920" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">9</span>
+          <span class="bn">Taylor Walls <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">4.3%<span class="am">+2226</span></td>
+        <td class="num fair">4.9% <span class="am">+1937</span></td>
+        <td class="num edge edge-flat">-0.6%</td>
+        <td class="num odds"><span class="px">+1920</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df12"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Taylor Walls · to hit a HR (Over 0.5) — 2 de-vigged, 11 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Kalshi</td><td class="num over">+2319</td><td class="num">-3350</td><td class="src">de-vig</td></tr><tr><td class="book">Novig</td><td class="num over">+2028</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">DraftKings</td><td class="num over">+1920</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1600</td><td class="num">-10000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1600</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+1500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="691406" data-player="Junior Caminero" data-edge="-0.0087" data-bvphr="0" data-bvpscore="-0.0030" data-model="0.1617" data-fair="0.1704" data-fairok="1" data-best="475" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">3</span>
+          <span class="bn">Junior Caminero <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab">0/3</td>
+        <td class="num model">16.2%<span class="am">+518</span></td>
+        <td class="num fair">17.0% <span class="am">+487</span></td>
+        <td class="num edge edge-flat">-0.9%</td>
+        <td class="num odds"><span class="px">+475</span><span class="bk">BetRivers</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df13"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Junior Caminero · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+525</td><td class="num">-567</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">BetRivers</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+455</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+450</td><td class="num">-750</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+450</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+440</td><td class="num">-587</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+430</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+430</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+425</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+390</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+375</td><td class="num">-805</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="661388" data-player="William Contreras" data-edge="-0.0300" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1228" data-fair="0.1528" data-fairok="1" data-best="536" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">4</span>
+          <span class="bn">William Contreras <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.3%<span class="am">+714</span></td>
+        <td class="num fair">15.3% <span class="am">+555</span></td>
+        <td class="num edge edge-neg">-3.0%</td>
+        <td class="num odds"><span class="px">+536</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df14"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">William Contreras · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+545</td><td class="num">-590</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">DraftKings</td><td class="num over">+536</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+525</td><td class="num">-1000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+525</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+507</td><td class="num">-693</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+490</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+490</td><td class="num">-796</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+480</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+480</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+465</td><td class="num">-1090</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="694192" data-player="Jackson Chourio" data-edge="-0.0308" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1371" data-fair="0.1679" data-fairok="1" data-best="475" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">1</span>
+          <span class="bn">Jackson Chourio <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">13.7%<span class="am">+629</span></td>
+        <td class="num fair">16.8% <span class="am">+495</span></td>
+        <td class="num edge edge-neg">-3.1%</td>
+        <td class="num odds"><span class="px">+475</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="df15"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Jackson Chourio · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+488</td><td class="num">-567</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">Hard Rock</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+472</td><td class="num">-544</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+470</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+460</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+450</td><td class="num">-750</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+440</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+440</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+425</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+422</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+395</td><td class="num">-855</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+390</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr></tbody></table></div></div><div id="view-games" style="display:none"><div class="game"><div class="game-head">Milwaukee Brewers vs Tampa Bay Rays  ·  Tropicana Field</div><div class="tscroll"><table class="tbl gtbl"><thead><tr>
+  <th>Batter</th><th>Pitcher</th>
+  <th class="num sortable" data-sort="bvpscore" title="HR / AB vs today's pitcher — click to sort (most HR, fewest AB first)">BvP HR/AB</th>
+  <th class="num sortable" data-sort="model" title="Model's HR probability — click to sort">Model</th>
+  <th class="num sortable" data-sort="fair" title="De-vigged fair probability — click to sort">Fair</th>
+  <th class="num sortable" data-sort="edge" title="Model minus fair, in points — click to sort">Edge</th>
+  <th class="num">Odds</th>
+  <th class="num" title="Enter the price you can actually get — the EV & vs-Fair columns then use it">Your Odds</th>
+  <th class="num sortable" data-sort="ev" title="Expected value at the price (your odds if entered, else best) per the model — click to sort high→low">EV</th>
+  <th class="num sortable" data-sort="vsfair" title="How the price compares to the de-vigged fair line — click to sort (beats fair most first)">vs Fair</th>
+  <th>Tier</th><th>Flags</th>
+</tr></thead><tbody>
+      <tr class="row tier-PASS" data-bid="669003" data-player="Garrett Mitchell" data-edge="0.0380" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1256" data-fair="0.0876" data-fairok="1" data-best="1120" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">6</span>
+          <span class="bn">Garrett Mitchell <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.6%<span class="am">+696</span></td>
+        <td class="num fair">8.8% <span class="am">+1041</span></td>
+        <td class="num edge edge-pos">+3.8%</td>
+        <td class="num odds"><span class="px">+1120</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_0"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Garrett Mitchell · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">FanDuel</td><td class="num over">+1120</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+1111</td><td class="num">-1623</td><td class="src">de-vig</td></tr><tr><td class="book">Bovada</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1076</td><td class="num">-1329</td><td class="src">de-vig</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1029</td><td class="num">-1940</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+950</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-2500</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+745</td><td class="num">-3460</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+650</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="666152" data-player="David Hamilton" data-edge="0.0373" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0988" data-fair="0.0615" data-fairok="1" data-best="1400" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">9</span>
+          <span class="bn">David Hamilton <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">9.9%<span class="am">+912</span></td>
+        <td class="num fair">6.2% <span class="am">+1526</span></td>
+        <td class="num edge edge-pos">+3.7%</td>
+        <td class="num odds"><span class="px">+1400</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="dg849799_1"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">David Hamilton · to hit a HR (Over 0.5) — 2 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1329</td><td class="num">-2464</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="668930" data-player="Brice Turang" data-edge="0.0343" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1227" data-fair="0.0884" data-fairok="1" data-best="920" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">5</span>
+          <span class="bn">Brice Turang <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.3%<span class="am">+715</span></td>
+        <td class="num fair">8.8% <span class="am">+1032</span></td>
+        <td class="num edge edge-pos">+3.4%</td>
+        <td class="num odds"><span class="px">+920</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_2"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Brice Turang · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Kalshi</td><td class="num over">+977</td><td class="num">-1377</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+920</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+920</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+900</td><td class="num">-1150</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-2500</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+720</td><td class="num">-3085</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+650</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+650</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+625</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="641343" data-player="Jake Bauers" data-edge="0.0227" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1739" data-fair="0.1512" data-fairok="1" data-best="550" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">2</span>
+          <span class="bn">Jake Bauers <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">17.4%<span class="am">+475</span></td>
+        <td class="num fair">15.1% <span class="am">+561</span></td>
+        <td class="num edge edge-flat">+2.3%</td>
+        <td class="num odds"><span class="px">+550</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_3"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Jake Bauers · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">Hard Rock</td><td class="num over">+550</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+547</td><td class="num">-760</td><td class="src">de-vig</td></tr><tr><td class="book">Novig</td><td class="num over">+545</td><td class="num">-641</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+524</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+520</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+490</td><td class="num">-714</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+475</td><td class="num">-800</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+460</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+460</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+450</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+440</td><td class="num">-1000</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="686217" data-player="Sal Frelick" data-edge="0.0219" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0835" data-fair="0.0616" data-fairok="1" data-best="1400" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">8</span>
+          <span class="bn">Sal Frelick <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">8.3%<span class="am">+1098</span></td>
+        <td class="num fair">6.2% <span class="am">+1524</span></td>
+        <td class="num edge edge-flat">+2.2%</td>
+        <td class="num odds"><span class="px">+1400</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="dg849799_4"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Sal Frelick · to hit a HR (Over 0.5) — 3 de-vigged, 9 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Ballybet</td><td class="num over">+1500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">Hard Rock</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1329</td><td class="num">-2603</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1320</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1200</td><td class="num">-2600</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="689414" data-player="Liam Hicks" data-edge="0.0198" data-bvphr="0" data-bvpscore="-0.0020" data-model="0.0926" data-fair="0.0728" data-fairok="1" data-best="1260" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">4</span>
+          <span class="bn">Liam Hicks <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab">0/2</td>
+        <td class="num model">9.3%<span class="am">+980</span></td>
+        <td class="num fair">7.3% <span class="am">+1273</span></td>
+        <td class="num edge edge-flat">+2.0%</td>
+        <td class="num odds"><span class="px">+1260</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="dg849799_5"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Liam Hicks · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+1567</td><td class="num">-3604</td><td class="src">de-vig</td></tr><tr><td class="book">Bovada</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+1260</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1220</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1176</td><td class="num">-8951</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1050</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1050</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+920</td><td class="num">-12560</td><td class="src">de-vig</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="666018" data-player="Jonathan Aranda" data-edge="0.0142" data-bvphr="0" data-bvpscore="-0.0030" data-model="0.1023" data-fair="0.0881" data-fairok="1" data-best="980" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">2</span>
+          <span class="bn">Jonathan Aranda <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab">0/3</td>
+        <td class="num model">10.2%<span class="am">+878</span></td>
+        <td class="num fair">8.8% <span class="am">+1035</span></td>
+        <td class="num edge edge-flat">+1.4%</td>
+        <td class="num odds"><span class="px">+980</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_6"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Jonathan Aranda · to hit a HR (Over 0.5) — 5 de-vigged, 9 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+1011</td><td class="num">-1233</td><td class="src">de-vig</td></tr><tr><td class="book">Bovada</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+980</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+977</td><td class="num">-1377</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+930</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+920</td><td class="num">-1750</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-2500</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+850</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+715</td><td class="num">-3025</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+625</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="806198" data-player="Cooper Pratt" data-edge="0.0100" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0800" data-fair="0.0700" data-fairok="1" data-best="1350" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">7</span>
+          <span class="bn">Cooper Pratt <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">8.0%<span class="am">+1150</span></td>
+        <td class="num fair">7.0% <span class="am">+1329</span></td>
+        <td class="num edge edge-flat">+1.0%</td>
+        <td class="num odds"><span class="px">+1350</span><span class="bk">BetMGM</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"><span class="flag hot" title="Hot last 7 days">🔥 hot L7</span></td>
+      </tr>
+      <tr class="detail" id="dg849799_7"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Cooper Pratt · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+1567</td><td class="num">-1900</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">BetMGM</td><td class="num over">+1350</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+1284</td><td class="num">-1623</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1260</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1127</td><td class="num">-2758</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+935</td><td class="num">-15285</td><td class="src">de-vig</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="650490" data-player="Yandy Díaz" data-edge="0.0098" data-bvphr="1" data-bvpscore="0.9970" data-model="0.1133" data-fair="0.1035" data-fairok="1" data-best="820" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">1</span>
+          <span class="bn">Yandy Díaz <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab">1/3</td>
+        <td class="num model">11.3%<span class="am">+783</span></td>
+        <td class="num fair">10.3% <span class="am">+866</span></td>
+        <td class="num edge edge-flat">+1.0%</td>
+        <td class="num odds"><span class="px">+820</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_8"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Yandy Díaz · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+900</td><td class="num">-1011</td><td class="src">de-vig</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+900</td><td class="num">-2500</td><td class="src">de-vig</td></tr><tr><td class="book">Kalshi</td><td class="num over">+869</td><td class="num">-1048</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+820</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+794</td><td class="num">-1633</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+780</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+660</td><td class="num">-2345</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="676356" data-player="Jonny DeLuca" data-edge="0.0058" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0782" data-fair="0.0724" data-fairok="1" data-best="1200" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">5</span>
+          <span class="bn">Jonny DeLuca <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">7.8%<span class="am">+1179</span></td>
+        <td class="num fair">7.2% <span class="am">+1281</span></td>
+        <td class="num edge edge-flat">+0.6%</td>
+        <td class="num odds"><span class="px">+1200</span><span class="bk">FanDuel</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_9"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Jonny DeLuca · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+1567</td><td class="num">-1983</td><td class="src">de-vig</td></tr><tr><td class="book">Kalshi</td><td class="num over">+1284</td><td class="num">-1623</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">FanDuel</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+1140</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+1127</td><td class="num">-2346</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1100</td><td class="num">-3500</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+820</td><td class="num">-5310</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="592885" data-player="Christian Yelich" data-edge="0.0033" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1125" data-fair="0.1092" data-fairok="1" data-best="800" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">3</span>
+          <span class="bn">Christian Yelich <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">11.2%<span class="am">+789</span></td>
+        <td class="num fair">10.9% <span class="am">+816</span></td>
+        <td class="num edge edge-flat">+0.3%</td>
+        <td class="num odds"><span class="px">+800</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_10"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Christian Yelich · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+809</td><td class="num">-1076</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">Hard Rock</td><td class="num over">+800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+764</td><td class="num">-1225</td><td class="src">de-vig</td></tr><tr><td class="book">DraftKings</td><td class="num over">+760</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+750</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+730</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+725</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+700</td><td class="num">-1600</td><td class="src">de-vig</td></tr><tr><td class="book">Betonline</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+700</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+625</td><td class="num">-1990</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+600</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="680700" data-player="Richie Palacios" data-edge="0.0029" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0776" data-fair="0.0747" data-fairok="1" data-best="1340" data-sig="model" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">7</span>
+          <span class="bn">Richie Palacios <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">7.8%<span class="am">+1189</span></td>
+        <td class="num fair">7.5% <span class="am">+1239</span></td>
+        <td class="num edge edge-flat">+0.3%</td>
+        <td class="num odds"><span class="px">+1340</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_11"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Richie Palacios · to hit a HR (Over 0.5) — 3 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr class="best"><td class="book">DraftKings</td><td class="num over">+1340</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Novig</td><td class="num over">+1329</td><td class="num">-3233</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1300</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1200</td><td class="num">-4000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1200</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+1100</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1000</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+940</td><td class="num">-17145</td><td class="src">de-vig</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="670764" data-player="Taylor Walls" data-edge="-0.0061" data-bvphr="0" data-bvpscore="0.0000" data-model="0.0430" data-fair="0.0491" data-fairok="1" data-best="1920" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">9</span>
+          <span class="bn">Taylor Walls <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">4.3%<span class="am">+2226</span></td>
+        <td class="num fair">4.9% <span class="am">+1937</span></td>
+        <td class="num edge edge-flat">-0.6%</td>
+        <td class="num odds"><span class="px">+1920</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_12"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Taylor Walls · to hit a HR (Over 0.5) — 2 de-vigged, 11 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Kalshi</td><td class="num over">+2319</td><td class="num">-3350</td><td class="src">de-vig</td></tr><tr><td class="book">Novig</td><td class="num over">+2028</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">DraftKings</td><td class="num over">+1920</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+1800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+1800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+1800</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+1600</td><td class="num">-10000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+1600</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+1500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Ballybet</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+1400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+900</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="691406" data-player="Junior Caminero" data-edge="-0.0087" data-bvphr="0" data-bvpscore="-0.0030" data-model="0.1617" data-fair="0.1704" data-fairok="1" data-best="475" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">3</span>
+          <span class="bn">Junior Caminero <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Tampa Bay Rays</span>
+        </td>
+        <td class="pit">Jacob Misiorowski <span class="hand R">RHP</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab">0/3</td>
+        <td class="num model">16.2%<span class="am">+518</span></td>
+        <td class="num fair">17.0% <span class="am">+487</span></td>
+        <td class="num edge edge-flat">-0.9%</td>
+        <td class="num odds"><span class="px">+475</span><span class="bk">BetRivers</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_13"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Junior Caminero · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+525</td><td class="num">-567</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr class="best"><td class="book">BetRivers</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+455</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+450</td><td class="num">-750</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+450</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+440</td><td class="num">-587</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+430</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+430</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+425</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+390</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+375</td><td class="num">-805</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="661388" data-player="William Contreras" data-edge="-0.0300" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1228" data-fair="0.1528" data-fairok="1" data-best="536" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">4</span>
+          <span class="bn">William Contreras <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">12.3%<span class="am">+714</span></td>
+        <td class="num fair">15.3% <span class="am">+555</span></td>
+        <td class="num edge edge-neg">-3.0%</td>
+        <td class="num odds"><span class="px">+536</span><span class="bk">DraftKings</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_14"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">William Contreras · to hit a HR (Over 0.5) — 5 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+545</td><td class="num">-590</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">DraftKings</td><td class="num over">+536</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+525</td><td class="num">-1000</td><td class="src">de-vig</td></tr><tr><td class="book">Hard Rock</td><td class="num over">+525</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+507</td><td class="num">-693</td><td class="src">de-vig</td></tr><tr><td class="book">Caesars</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+500</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">FanDuel</td><td class="num over">+490</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Prophetexchange</td><td class="num over">+490</td><td class="num">-796</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+480</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+480</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetMGM</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+465</td><td class="num">-1090</td><td class="src">de-vig</td></tr></tbody></table></div>
+      </td></tr>
+      <tr class="row tier-PASS" data-bid="694192" data-player="Jackson Chourio" data-edge="-0.0308" data-bvphr="0" data-bvpscore="0.0000" data-model="0.1371" data-fair="0.1679" data-fairok="1" data-best="475" data-sig="none" onclick="tog(this)">
+        <td class="bat">
+          <span class="ord">1</span>
+          <span class="bn">Jackson Chourio <span class="lc proj" title="Projected lineup (RotoWire) — not yet official">Proj</span></span>
+          <span class="tm">Milwaukee Brewers</span>
+        </td>
+        <td class="pit"><span class="sp-tbd" title="Opposing starter not announced yet — this projection uses a league-average pitcher and will sharpen once the starter is posted">⚠ SP TBD</span><span class="vn">Tropicana Field</span></td>
+        <td class="num bvpab"><span class="none">—</span></td>
+        <td class="num model">13.7%<span class="am">+629</span></td>
+        <td class="num fair">16.8% <span class="am">+495</span></td>
+        <td class="num edge edge-neg">-3.1%</td>
+        <td class="num odds"><span class="px">+475</span><span class="bk">Hard Rock</span></td>
+        <td class="num yourodds" onclick="event.stopPropagation()">
+          <input class="yo-in" inputmode="text" placeholder="+650" oninput="recalcYO(this)">
+        </td>
+        <td class="num ev-cell"></td>
+        <td class="num vf-cell"></td>
+        <td class="tier"><span class="badge pass">PASS</span></td>
+        <td class="flags"></td>
+      </tr>
+      <tr class="detail" id="dg849799_15"><td colspan="12">
+        <div class="odds-board"><div class="ob-cap">Jackson Chourio · to hit a HR (Over 0.5) — 4 de-vigged, 10 one-sided</div><table class="ob-tbl"><thead><tr><th class="book">Book</th><th class="num">Over</th><th class="num">Under</th><th class="src">Source</th></tr></thead><tbody><tr><td class="book">Novig</td><td class="num over">+488</td><td class="num">-567</td><td class="src">de-vig</td></tr><tr class="best"><td class="book">Hard Rock</td><td class="num over">+475</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Kalshi</td><td class="num over">+472</td><td class="num">-544</td><td class="src">de-vig</td></tr><tr><td class="book">FanDuel</td><td class="num over">+470</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Bovada</td><td class="num over">+460</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">ESPN BET</td><td class="num over">+450</td><td class="num">-750</td><td class="src">de-vig</td></tr><tr><td class="book">Ballybet</td><td class="num over">+440</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">BetRivers</td><td class="num over">+440</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Caesars</td><td class="num over">+425</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">DraftKings</td><td class="num over">+422</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Betonline</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Mybookie</td><td class="num over">+400</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr><tr><td class="book">Fliff</td><td class="num over">+395</td><td class="num">-855</td><td class="src">de-vig</td></tr><tr><td class="book">BetMGM</td><td class="num over">+390</td><td class="num ob-na">—</td><td class="src">one-sided</td></tr></tbody></table></div>
+      </td></tr></tbody></table></div></div></div>
 
 <div class="disclaimer">
   Edge is graded against the de-vigged fair line. Model and Fair show the implied
